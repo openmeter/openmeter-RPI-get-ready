@@ -1,4 +1,4 @@
-1. Intro and goal:
+# 1. Intro and goal:
 
 The goal of this repo is to prepare a raspberrypi for the openmeter project. 
 
@@ -7,16 +7,16 @@ We will prepare a RaspberryPi, or RPI, in "headless" mode. This simply means tha
 
 - To get the RaspberryPi ready we will:
     - burn the SD card with the OS (Operating System)
-    - configure a file on SD card for wifi with network-SSID + password
+        - configure a file on SD card for wifi with network-SSID + password
         - configure the SD card so the RPI will accept ssh
-    - Install **docker** on the RPI
-- Install 'git' so we can 'clone' or download the 'openmeter' container configuration later as explained in the "openmeter" repo.
+    - Install **docker and docker-compose** on the RPI
+    - Install 'git' so we can 'clone' or download the 'openmeter' container configuration later as explained in the "openmeter" repo.
 
 ### Summary : RPI + OS + docker + git
 
 <img src = "./img/RPI_docker.png" alt = "needed hardware" width = "600px">
 
-    1.1 Hardware:
+ ##   1.1 Hardware:
 
 | What you need | where to buy |
 |:--- | :---: |
@@ -43,7 +43,7 @@ We will prepare a RaspberryPi, or RPI, in "headless" mode. This simply means tha
     * modify openhab password for cloud mobile app
 *********
 ## Detailed installation steps
-2. Install RaspberryPI
+# 2. Install RaspberryPI
 
 We will go for a headless install
 
@@ -96,7 +96,7 @@ network={
 
 reference: [setting up raspberrypi](https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup)
 
-3. Install docker on pi
+# 3. Install docker on pi
 * Install docker
     * curl -sSL https://get.docker.com | sh
     * Add pi user to run docker commands
@@ -120,7 +120,7 @@ reference: [setting up raspberrypi](https://desertbot.io/blog/headless-raspberry
 # todo for later shell script
 ```
 
-4. Final check:
+# 4. Final check:
 
 If everything went ok then you should be able to:
 - ssh into pi from your pc
