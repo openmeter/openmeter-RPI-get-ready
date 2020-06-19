@@ -12,7 +12,7 @@ We will prepare a RaspberryPi, or RPI, in "headless" mode. This simply means tha
     - Install **docker and docker-compose** on the RPI
     - Install 'git' so we can 'clone' or download the 'openmeter' container configuration later as explained in the "openmeter" repo.
 
-### Summary : RPI + OS + docker + git
+### Summary : Here we will only install: RPI + OS + docker + git (containers and docker-compose will be done in 'openmeter' repo)
 
 <img src = "./img/RPI_docker.png" alt = "needed hardware" width = "600px">
 
@@ -28,7 +28,7 @@ We will prepare a RaspberryPi, or RPI, in "headless" mode. This simply means tha
 
 <img src = "./img/hw.png" alt = "needed hardware" width = "400px">
 
-    1.2 Installation steps - Overview
+## 1.2 Installation steps - Overview
 
     * Install Rasperrypi
         * SD card with raspberrypi OS-lite
@@ -117,7 +117,8 @@ reference: [setting up raspberrypi](https://desertbot.io/blog/headless-raspberry
     * on raspberry:
 
 ```bash
-# todo for later shell script
+# run the script to create dirs
+sh install_openmeter.sh
 ```
 
 # 4. Final check:
@@ -139,11 +140,6 @@ git --version                   -> will return the version (eg:2.20.1)
 <img src="./img/check_installation.png" alt="if everything went ok" width="400px">
 
 ## Final Directory structure ready to bind to the docker containers:
-
-```bash
-# run the script to create dirs
-sh install_openmeter.sh
-```
 
 **Remark**: if everything went ok you will get this directory structure but **without content - so No files**"
 
