@@ -77,8 +77,10 @@ network={
     * on PC: 
         * create empty file named 'ssh' and copy it in root
             * ps: make sure that is has one space char!
-
-* **Step 6:** Login to pi for basic update and config
+* **Step 6:**
+    * Unplug the SD card and plug it into the Pi
+    * Power the Pi and it should connect to your wifi network. 
+* **Step 7:** Login with ssh from your PC/Mac into the pi for basic update and config
     * from mac: type in cmd window
         * if you know the IP addr:
             * 'ssh pi@192.168.2.90' 
@@ -86,13 +88,17 @@ network={
             * 'ssh-keygen -R raspberrypi.local'
             * 'ssh pi@raspberrypi.local'
     * replace standaard pswd and user:
-        * sudo raspi-config
+        * Defaults are:
+            * user = "pi"
+            * password ="raspberry"
+
+        * 'sudo raspi-config'
         * ps: you will have to log in again with ssh
             * ssh pi@mypi.local 
                 * remark: mypi = new hostname
     * update system:
-        * 'sudo update -y'
-        * 'sudo upgrade -y'
+        * 'sudo apt-get update -y'
+        * 'sudo apt-get upgrade -y'
 
 reference: [setting up raspberrypi](https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup)
 
