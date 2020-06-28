@@ -150,3 +150,17 @@ git --version                   -> will return the version (eg:2.20.1)
 **Remark**: if everything went ok you will get this directory structure but **without content - so No files**"
 
 <img src="./img/install_tree.png" alt="directory structure" width="400px">
+
+## Utility - In case you want to copy files from or to RPI
+
+```bash
+# UPLOAD: from your Mac/PC to RPI 
+scp -r /path/from/destination username@hostname:/path/to/destination
+# example
+scp -r /data/GitHubProjetcs/openmeter pi@192.168.2.151:/openmeter
+
+# DOWNLOAD: from RPI to Mac/PC
+scp -r  username@hostname:/path/to/destination /path/from/destination
+# example
+scp -r pi@192.168.2.151:/openmeter .
+```
