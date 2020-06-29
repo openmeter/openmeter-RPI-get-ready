@@ -145,13 +145,7 @@ git --version                   -> will return the version (eg:2.20.1)
 
 <img src="./img/check_installation.png" alt="if everything went ok" width="400px">
 
-## Final Directory structure ready to bind to the docker containers:
-
-**Remark**: if everything went ok you will get this directory structure but **without content - so No files**"
-
-<img src="./img/install_tree.png" alt="directory structure" width="400px">
-
-## Utility - In case you want to copy files from or to RPI
+## Info - In case you want to copy files from or to RPI
 
 ```bash
 # UPLOAD: from your Mac/PC to RPI 
